@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>form login</title>
+        <style>
+            fieldset{
+                width:300px;
+                border-color:blue;
+                border-radius:10px;
+                background-color: #a2e1e6;
+
+            }
+            legend{
+                color: rgb(255, 38, 0);
+            }
+            div{
+                margin-top:70px;
+                margin-left:90px;
+                font-size: 20px;
+            }
+            label{
+                margin:10px;
+                
+            }
+            input{
+                margin-top:10px;
+                margin-bottom:10px;
+            }
+            button{
+                background-color:rgb(0, 162, 255);
+                color:white;
+                border:none;
+                border-radius:4px;
+                box-shadow:2px 3px 2px 2px rgb(127, 136, 255);
+                width:70px;
+                height:30px;
+                
+            }
+        </style>
+        <body>
+            <div id="fieldset">
+                <fieldset>
+                    <legend>login form</legend>
+            <label>enter email</label>
+            <br>
+            <input type="email" id="email">
+            <br>
+            <label>enter password</label>
+            <br>
+            <input type="password" id="password">
+            <br>
+            <button onclick="showmessage()">login</button>
+                </fieldset>
+            </div>
+            <div id="WelcomeTag" style="display:none;">
+                <h1>WELCOME TO JAVASCRIPT</h1>
+            </div>
+                <div id="userForm" style="display:none;">
+            <button onclick="createUser()">create user</button>
+              </div>
+              <div id="userInputForm" style="display:none;">
+                <label>username</label>
+                <input id="username" type="text"/><br>
+                <label>age</label>
+                <input id="userage" type="number"/><br>
+                <label>email</label>
+                <input type="email" id="useremail"/><br>
+                <label>phone</label>
+                <input type="number" id="phno"/><br>
+                <label>place</label>
+                <input type="text" id="place"/><br>
+                <button onclick="save()">save</button>
+              </div>
+            <script>
+                var userObject=new Object();
+                var emailId="divi@gmail.com";
+                var fullPassword="1234560";
+                var element=document.getElementsByTagName("button");
+                element.addEventListener("click")
+                   function showmessage(){
+                     var  email=document.getElementById("email");
+                     var password=document.getElementById("password")  
+                     var emailData=email.value;
+                     var passwordData=password.value;
+                    
+                     
+                     console.log(emailData);
+                     console.log(passwordData);
+                     if(emailData==emailId && fullPassword==passwordData)
+                     {
+                     var form=document.getElementById("fieldset");
+                     form.style.display="none";
+                     var Welcome=document.getElementById("WelcomeTag")
+                     Welcome.style.display="block";
+                     var userForm=document.getElementById("userForm");
+                     userForm.style.display="block";
+                     }
+                     else{
+                        var message="wrong credential";
+                     }
+                    }
+                    function createUser(){
+                        var userInputForm=document.getElementById("userInputForm");
+                        userInputForm.style.display="block";
+
+                    }
+                    function save(){
+                        var username=document.getElementById("username").value;
+                        var email=document.getElementById("useremail").value;
+                        var age=document.getElementById("userage").value;
+                        var phno=document.getElementById("phno").value;
+                        var place=document.getElementById("place").value;
+                         var user={
+                            userName:username,
+                            userAge:age,
+                            userEmail:email,
+                            userPhno:phno,
+                            userPlace:place
+                        }
+                        console.log(user);
+                    }
+            </script>
+        </body>
+        </html>
+    </head>
