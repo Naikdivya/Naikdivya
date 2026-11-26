@@ -48,11 +48,6 @@ MySQL | MariaDB | VS Code | Eclipse
 - Built seat booking and payment tracking functionality.
 - Technologies: Java, JSP, Servlets, MySQL, HTML, CSS, JavaScript.
 
-### 3. DevOps Hands-on Labs
-- Practising Linux commands and shell scripting.
-- Learning Git workflows, branching, merging, and Git hooks.
-- Exploring automated code-quality checks using Flake8.
-- Building practical cloud and DevOps projects.
 
 
 ---
