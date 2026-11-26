@@ -28,7 +28,7 @@ AWS | Linux | Windows | Virtual Machines
 
 **DevOps & Tools**
 
-Git | GitHub | Docker (Learning) | Jenkins (Learning) | GitHub Actions (Learning)
+Git | GitHub | Docker | Jenkins | GitHub Actions
 
 **Backend Development**
 
@@ -36,7 +36,7 @@ Java Servlets | JSP | Django | Django REST Framework | REST APIs
 
 **Database & Other Tools**
 
-MySQL | Postman | VS Code | Eclipse
+MySQL | MariaDB | VS Code | Eclipse
 
 ---
 
